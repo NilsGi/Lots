@@ -2,6 +2,10 @@
 
 Den här leveransen är helt statisk och använder inte WordPress, PHP, databas eller något JavaScript-ramverk.
 
+## Lugnare design
+
+Startsidan har en tydligare innehållshierarki med sex huvuddelar, färre konkurrerande knappar och tre utvalda produkter. Den extra toppbaren och den flytande kontaktknappen är borttagna på hela webbplatsen. Huvudmenyn innehåller fyra tydliga val samt kontaktknappen.
+
 ## Publicera
 
 1. Ta en fullständig backup av nuvarande webbrot.

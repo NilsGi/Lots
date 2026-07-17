@@ -116,7 +116,7 @@
         .filter((item) => item.type === "product")
         .filter((item) => !needle || item.search.includes(needle))
         .sort((a, b) => b.modified.localeCompare(a.modified))
-        .slice(0, 6);
+        .slice(0, 3);
 
       productGrid.innerHTML = products.length ? products.map((item) => `
         <a class="product-card" href="${escapeHtml(item.path)}">
