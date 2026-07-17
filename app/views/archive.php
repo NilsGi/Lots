@@ -1,0 +1,7 @@
+<main id="main">
+  <section class="page-hero page-hero--simple"><div class="container"><nav class="breadcrumbs"><a href="/">Start</a><span>/</span><span><?= e((string)$route['title']) ?></span></nav><p class="eyebrow eyebrow--light"><?= ($route['archiveType'] ?? 'all') === 'product' ? 'Produktkatalog' : (($route['archiveType'] ?? 'all') === 'post' ? 'Kunskap och aktuellt' : 'Hela webbplatsen') ?></p><h1><?= e((string)$route['title']) ?></h1><p class="page-hero__lead"><?= e((string)($route['description'] ?? 'Sök och filtrera innehållet.')) ?></p></div></section>
+  <section class="archive-section"><div class="container" data-archive data-type="<?= e((string)($route['archiveType'] ?? 'all')) ?>" data-taxonomy="<?= e((string)($route['taxonomy'] ?? '')) ?>" data-query="<?= e((string)($route['initialQuery'] ?? '')) ?>">
+    <div class="archive-tools"><label><span>Sök</span><input type="search" placeholder="Sök efter namn, produkt eller område…" data-archive-search></label><label><span>Sortera</span><select data-archive-sort><?php if (($route['archiveType'] ?? '') === 'product'): ?><option value="alpha">Namn A–Ö</option><option value="updated">Senast uppdaterade</option><?php else: ?><option value="date">Senaste först</option><option value="alpha">Namn A–Ö</option><?php endif; ?></select></label></div>
+    <div class="archive-status" data-archive-status aria-live="polite">Läser innehållet…</div><div class="card-grid archive-grid" data-archive-grid></div><nav class="pagination" data-pagination aria-label="Sidindelning"></nav>
+  </div></section>
+</main>

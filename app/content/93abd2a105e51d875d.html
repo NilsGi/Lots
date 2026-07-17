@@ -1,0 +1,43 @@
+<h2>Principer för EkoTek</h2>
+<p>Varje EkoSecure – Repeatrar och Larmsökare är en del (nod) i ett självorganiserat radionätverk:<br>
+Varje nod i nätverket söker efter kontakt med närliggande noder, för att på det sättet skapa ett finmaskigt nätverk. Organisationen i nätverket sker automatiskt av själva noderna, ingen programmering behövs.<br>
+Då nätverket är självorganiserande, är det också självreparerande. Skulle en nod (repeater) sluta fungera, kommer nätverket automatiskt att konfigurera om sig runt den icke fungerande noden.</p>
+<p>Dimensionerna på nätverket bestäms av hur och var repeatrarna placeras, d.v.s. hur layouten arrangeras så att uppställda krav kan uppfyllas, t.ex. för bra mottagning i miljöer som industerier, utom och inomhus. Själva Repeater kan kopplas till positionsfyrar där krav på nogrannare positionering krävs</p>
+<p>Det är lätt att skapa skalbara nätverk genom det stora antal repeatrar som EkoTek kan hantera.<br>
+Repeatrar monteras normalt på väggar eller i tak. Genom att använda en extra kapsling kan de också monteras utomhus. Huben placeras antingen på en vägg eller ett skrivbord, så att dess display kan ses tydligt.</p>
+<h2>Lokaliseringsrapportering</h2>
+<p>När en användare utlöser en larmsignal är det viktigt att veta varifrån, så att assistans kan komma till rätt plats så fort som möjligt.<br>
+EkoTek kan rapportera rätt plats baserat på de lokaliseringssignaler som sänds ut av repeatrarna.</p>
+<h2>Akutlarm – Rödknapp</h2>
+<p>En användare kan manuellt larma genom att trycka in den röda knappen på larmsökaren eller larmknappen. Larm kan också utlösas automatiskt om bäraren ligger ner, (fallarm) om bäraren inte rör sig och inte reagerar på uppmaning (inaktivitetslarm) eller finns på fel plats (vandrarlarm). När ett larm aktiveras visas användarens identitet (namn), plats för larmet samt typ av larm i displayen på huben och i de meddelanden som sänds till larmsökarna.</p>
+<h2>Förbjudet område</h2>
+<p>Funktionen “förbjdet område” innebär att larmsökare och larmknappar automatiskt löser ut larm om en enhet kommer in ett område, som den lokala repeatern anser vara obehörigt område. Användningen kallas också för “vandrarlarm”, eftersom larm utlöses om, exempelvis, en patient går in i ett område, där personen i fråga inte förväntas, eller inte får, vara. Funktionen är också användbar för besökare/hantverkare, som går in i del av en byggnad, där de inte får vara.</p>
+<h2>Ledsignaler</h2>
+<p>Ledsignaler används för att uppdatera en repeater med information om vem som är dess överordnade repeater. Huben och alla repeatrar sänder regelbundet ut två typer av ledsignaler – systemsignaler och platssignaler.<br>
+Platssignaler har generellt en kortare räckvidd än systemsignaler. En repeater, larmsökare eller larmknapp kan bara ha en överordnad enhet i taget. Varje sekund sänder repeatern till<br>
+larmsökaren eller larmknappen, vars position då uppdateras och fortsätter ta mot signaler från repeatern (sin överordnade). Om larmsökaren förblir inom platssignalens räckvidd blir positionen visad i larmsökarens display ”= [platsens namn]” (t.ex. = Konferensrum 1). Om larmsökaren går utanför platssignalens räckvidd men fortfarande är kvar inom räckvidden för systemsignalen, visas istället ”- [platsens namn]”, där platsens namn är namnet på den plats där den senaste platssignalen togs emot. När en larmsökare eller larmknapp tar emot en ny platssignal hämtar den platsinformation från den nya repeatern och uppdaterar sig själv med den positionen.</p>
+<h2>Tvåvägs kvittering</h2>
+<p>Meddelanden från externa system och underhållsmeddelanden utgörs av envägs meddelanden från huben till larmsökaren, medan larmmeddelanden, aktiverade av användaren, är tvåvägs. För att lugna användaren, så måste ett larm från en larmsökare eller larmknapp kvitteras av någon som kommer till hjälp. Denna kvittering returneras till användaren i form av en lampa i larmknappen samt att summerns ljudsignal ändrar karaktär, eller genom att larmsökarens display indikerar larmets status.<br>
+7. Tvåvägs radio<br>
+Alla EkoTeks radiolänkar är tvåvägs, med kapacitet att både sända signaler till och ta emot från alla enheter i nätverket.<br>
+Tvåvägs radio ger möjlighet att snabbt upptäcka och korrigera förlorade meddelanden, t.ex. när ett meddelande reläas från en repeater till en annan så kommer den andra repeatern att bekräfta mottagandet av meddelandet. Om den första repeatern inte får någon kvittering, sänder den sitt meddelande en gång till. Denna kapacitet gör det möjligt för EkoTek att fungera även i miljöer med radiostörningar eller dåliga signalförhållanden.<br>
+En annan fördel med tvåvägs radiokommunikation är möjligheten att trådlöst ladda ner programvara till alla enheter från huben. Fasta enheter innehåller inte sin egen konfiguration, då denna sänds av huben på begäran när varje enhet kopplas på. Även larmsökare och larmknappar har sin konfiguration i huben, vilket gör det onödigt att hämta in mobila enheter vid en konfigurationsändring, då alla uppdateringar sköts centralt från huben.</p>
+<h2>Frekvenshoppning</h2>
+<p>EkoTek radiolänkar kan konfigureras att arbeta på en fast frekvens eller hoppa mellan alla 16 tillgängliga frekvenser. Frekvenshoppande ökar förmågan hos EkoTek-system att klara av radiostörningar. Om ett meddelande går förlorat på grund av störningar på en frekvens, upptäcks detta omedelbart och meddelandet sänds igen på nästa frekvens i hoppserien.<br>
+Frekvenshoppande är speciellt värdefullt om en lokal radiomiljö är okänd eller utsatt för förändringar. EkoTeks kombination av detektering av meddelandebortfall, automatisk meddelanderetur och frekvenshoppning medför mycket säkra radiokommunikationer.</p>
+<h2>ESPA- och TAP-sökning In/Ut</h2>
+<p>I tillägg till sin inbyggda tvåvägskommunikation har EkoTek kapaciteten att samverka med externa system via ett envägs sökarinterface. Detta innebär att EkoTek-systemet kan antingen ta mot eller sända meddelanden till ett befintligt envägs sökarsystem.</p>
+<p>Hubens sökarinterface kan väljas från ESPA eller TAP som en ingång eller utgång via Port A samt genom att använda Port B TAP eller ESPA endast som ingång. Detta gör att EkoTek kan användas som ett personsökarsystem, t.ex. för anslutning till ett sköterskesystem eller för att sända meddelanden till ett befintligt envägs personsökarsystem.</p>
+<h2>Konfiguration</h2>
+<p>All konfiguration av EkoTek-systemet utförs via web-sidor lagrade i EkoTeks hub. Tillträde till denna web-server sker antingen via 10/100Base-T Ethernet-porten eller genom användning av PPP via en seriell RS232-port. Konfigurationen för alla enheter finns i huben och nedladdas varje gång en enhet kopplas på.<br>
+Hubens förvalda programmering medger att ett nytt system kan fungera direkt som det kommer från sin förpackning. Det behöver bara tilldelas platsnamn för repeatrar och användarnamn för de mobila enheterna, vilka skrivs in på hubens web-servers konfigurationssida. Varje enhet har sitt eget unika fabriksvalda serienummer för identifikation, men det finns ingen förvald programmering av enheterna. Konfigurationen i huben, vald för enheterna under installation, anger om enhetsfunktioner (t.ex. fallarm) ska vara använda eller inte.</p>
+<h2>Nätverksparametrar</h2>
+<p>Ett EkoTek-system, styrt av en enda hub, kan hantera upp till 500 enheter i denna version. Se Appendix 2: Specifikationer för maximalt antal av varje enhetstyp.<br>
+Nätverkets radiokanaler kan konfigureras med hjälp av hubens web-serverinterface, med upp till 16 kanaler tillgängliga för samtidig användning i ett enda EkoTek-system. Förvald konfiguration för alla EkoTek-enheter är att använda kanal 15. Se Multitone-dokumentet “Exempel på EkoTek-systems konfigurationer” för mer information om speciella konfigurationer.<br>
+En enda EkoTek radiokanal kan hantera många repeatrar, men en begränsning av 70 per kanal rekommenderas, för att tillåta dynamisk omkonfiguration (tyst byte av överordnad enhet). Repeatrarna kan konfigureras i alla fysiska miljöer, så länge som varje repeater kan etablera och bibehålla en något sånär stark signal med närliggande repeater, som har en kommunikationsväg tillbaka till huben.</p>
+<h2>Diagnostik och statistik</h2>
+<p>Varje EkoTek-enhet samlar in statistik om hur nätverket fungerar. Denna statistik sänds regelbundet till huben och kan ses med hjälp av web-servern.<br>
+Fel (t.ex. bortfall av nätverkstäckning) och indikering av låg batterispänning i EkoTek-enheter, visas i statusföntsret i web-gränsnittet. Dessa meddelande visas också i displayerna i hubar och/eller larmsökare, om detta valts vid konfigureringen.</p>
+
+
+<img src="/wp-content/uploads/Systembeskrivning-EkoTek2022.png" alt="" loading="lazy" width="1008" height="819">

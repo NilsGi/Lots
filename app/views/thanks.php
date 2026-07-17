@@ -1,0 +1,1 @@
+<main id="main"><section class="message-page"><div class="container"><span class="message-page__mark">✓</span><h1>Tack för er förfrågan.</h1><p>Uppgifterna är skickade till LOTS. Vi återkommer så snart vi kan.</p><a class="button button--primary" href="/">Till startsidan</a></div></section></main>

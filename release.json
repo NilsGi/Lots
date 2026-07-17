@@ -1,0 +1,10 @@
+{
+  "version": "3.0.0",
+  "builtAt": "2026-07-17T08:33:03.146Z",
+  "runtime": "PHP 8.1+ / Apache",
+  "wordpress": false,
+  "routes": 1317,
+  "items": 1030,
+  "contentFragments": 1019,
+  "removedLegacyAttributes": 59033
+}
